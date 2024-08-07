@@ -23,6 +23,7 @@
 	z-index: 2;
 	background-color: var(---baselight);
 	padding-bottom: 0.5rem;
+	padding-left: 1rem;
 	margin-right: 2rem;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 0 0 3px 0;
@@ -31,6 +32,7 @@
 
 .dropdownMenuItem {
 	padding-top: 0.5rem;
+	list-style: none;
 }
 
 .dropdownMenuItem a {

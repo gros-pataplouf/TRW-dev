@@ -19,6 +19,11 @@ const DropdownNav = ({ name, menuItems, inHamburger }) => {
 		};
 	}, [isOpen]);
 
+	const handleClick = () => {
+		setIsOpen(!isOpen);
+		closeNavbar();
+	};
+
 	return (
 		<div ref={ref}>
 			<button
@@ -48,7 +53,7 @@ const DropdownNav = ({ name, menuItems, inHamburger }) => {
 									className={({ isActive }) =>
 										isActive ? styles.active : ''
 									}
-									onClick={() => setIsOpen(!isOpen)}
+									onClick={handleClick}
 								>
 									{item.title}
 								</NavLink>
